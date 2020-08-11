@@ -94,7 +94,7 @@ func (d *dynamicGraphQLClient) Query(ctx context.Context, q interface{}, vars ma
 // NewDefault returns a new GitHub API client using the
 // default api.github.com address.
 func NewDefault() *scm.Client {
-	client, _ := New("https://api.github.com")
+	client, _ := New("https://github.ford.com/api/v3")
 	return client
 }
 
