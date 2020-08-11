@@ -50,7 +50,7 @@ func NewClient(driver, serverURL, oauthToken string, opts ...clientOptionFunc) (
 			return nil, MissingGitServerURL
 		}
 		client, err = gitea.New(serverURL)
-	case "github":
+	case "github.ford":
 		if serverURL != "" {
 			client, err = github.New(ensureGHEEndpoint(serverURL))
 		} else {
